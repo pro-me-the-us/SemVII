@@ -1,0 +1,2 @@
+scenario,K,solver,alpha,beta,ell_mean,ell_std,Sp_mean,Sp_std,tau_mean,tau_std,time_mean,time_std,converged_rate
+Room 6x6-2a,2,cbs,1.0,0.0,20.0,0.0,6.0,0.0,38.171073846375336,0.0,0.001926755905151367,0.00012119176992344,1.0
