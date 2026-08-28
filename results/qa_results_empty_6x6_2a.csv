@@ -1,0 +1,2 @@
+scenario,K,solver,alpha,beta,ell_mean,ell_std,Sp_mean,Sp_std,tau_mean,tau_std,tau_median,tau_q25,tau_q75,tau_geomean,time_mean,time_std,converged_rate,iter_outer_mean,iter_inner_mean,p_bar_size_mean
+Empty 6x6-2a,2,qa,0.5,0.5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,173.46974041461945,42.094543014356475,0.0,30.0,32.5,5.8
