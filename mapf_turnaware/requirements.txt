@@ -1,7 +1,0 @@
-numpy
-pandas
-matplotlib
-networkx
-dimod
-dwave-neal
-pytest
