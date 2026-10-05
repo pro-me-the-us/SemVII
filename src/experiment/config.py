@@ -41,9 +41,9 @@ def generate_run_configs() -> List[RunConfig]:
     configs = []
     
     scenarios = {
-        "Empty 6x6-2a": [(0.50, 0.50)],
-        "Empty 6x6-4a": [(1.00, 0.00), (0.75, 0.25), (0.50, 0.50)],
-        "Room 6x6-2a": [(1.00, 0.00), (0.50, 0.50)],
+        "Empty 6x6-2a": [(0.501, 0.499)],
+        "Empty 6x6-4a": [(1.00, 0.00), (0.75, 0.25), (0.501, 0.499)],
+        "Room 6x6-2a": [(1.00, 0.00), (0.501, 0.499)],
     }
     
     for scenario_id, qa_params in scenarios.items():

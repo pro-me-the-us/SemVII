@@ -100,7 +100,9 @@ def compute_path_costs(path: Path) -> Path:
         d = extract_direction(path.nodes[i], path.nodes[i+1])
         path.directions.append(d)
         if d is not None:
-            path.length += 1.0  # Only actual moves (not waits) add to length ℓp
+            path.length += 1.0  # Moves cost 1.0
+        else:
+            path.length += 0.001 # Waits cost 0.001 to break temporal degeneracy
 
             
     path.s_values = [0.0] * len(path.directions)

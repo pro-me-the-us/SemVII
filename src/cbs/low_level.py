@@ -65,7 +65,7 @@ def space_time_astar(
     heapq.heappush(open_set, (start_h, 0, 0, next(counter), start_pos, initial_path))
     
     # Visited state: (pos, t) -> g_score
-    visited: Dict[Tuple[Coord, int], int] = {(start_pos, 0): 0}
+    visited: Dict[Tuple[Coord, int], float] = {(start_pos, 0): 0.0}
     
     while open_set:
         f, t, g, _, curr, path_nodes = heapq.heappop(open_set)
@@ -108,7 +108,7 @@ def space_time_astar(
             if e_conflict:
                 continue
                 
-            move_cost = 0 if nxt == curr else 1  # Wait costs 0, move costs 1
+            move_cost = 0.001 if nxt == curr else 1.0  # Wait costs 0.001, move costs 1.0
             new_g = g + move_cost
             
             state = (nxt, nxt_t)

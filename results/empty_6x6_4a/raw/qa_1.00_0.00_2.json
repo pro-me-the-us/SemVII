@@ -4,15 +4,15 @@
   "alpha": 1.0,
   "beta": 0.0,
   "seed": 2,
-  "total_length": 24.0,
-  "total_Sp": 5.0,
-  "total_tau": 11.543901584307786,
-  "runtime": 21.925853729248047,
+  "total_length": 24.072,
+  "total_Sp": 6.0,
+  "total_tau": 16.21467585477939,
+  "runtime": 122.45621109008789,
   "converged": true,
   "num_agents": 4,
-  "iterations_outer": 1,
-  "iterations_inner": 6,
-  "num_paths_generated": 18,
+  "iterations_outer": 6,
+  "iterations_inner": 13,
+  "num_paths_generated": 21,
   "paths": {
     "3": {
       "length": 6.0,
@@ -72,10 +72,10 @@
       ]
     },
     "0": {
-      "length": 6.0,
-      "Sp": 1.0,
-      "tau_exp": 1.718281828459045,
-      "tau_linear": 1.0,
+      "length": 6.024,
+      "Sp": 2.0,
+      "tau_exp": 6.38905609893065,
+      "tau_linear": 2.0,
       "nodes": [
         {
           "v": [
@@ -275,15 +275,15 @@
         },
         {
           "v": [
-            4,
-            2
+            3,
+            3
           ],
           "t": 28
         },
         {
           "v": [
-            5,
-            2
+            4,
+            3
           ],
           "t": 29
         },
@@ -297,7 +297,7 @@
       ]
     },
     "2": {
-      "length": 6.0,
+      "length": 6.024,
       "Sp": 1.0,
       "tau_exp": 1.718281828459045,
       "tau_linear": 1.0,
@@ -522,7 +522,7 @@
       ]
     },
     "1": {
-      "length": 6.0,
+      "length": 6.024,
       "Sp": 2.0,
       "tau_exp": 6.38905609893065,
       "tau_linear": 2.0,

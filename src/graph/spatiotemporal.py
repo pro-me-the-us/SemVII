@@ -73,9 +73,9 @@ def build_augmented_graph(
                     # Wait move
                     if (v, t+1) not in forbidden:
                         v_node_wait = AugNode(v, t+1, d)
-                        # Wait move: w=0 (no move cost), sk=0, omega based on wait
+                        # Wait move: sk=0, omega based on wait
                         omega_e = omega.get((v, v, t), 0.0)
-                        cost = omega_e  # w=0 per plan §5.2: "wait cost = 0"
+                        cost = omega_e + (alpha / ell_max) * 0.001  # wait cost = 0.001 to break temporal degeneracy
                         G.add_edge(u_node, v_node_wait, weight=cost)
 
                         

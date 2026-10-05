@@ -7,7 +7,7 @@
   "total_length": 12.0,
   "total_Sp": 3.0,
   "total_tau": 8.107337927389695,
-  "runtime": 0.0019617080688476562,
+  "runtime": 0.003991365432739258,
   "converged": true,
   "num_agents": 2,
   "iterations_outer": 1,

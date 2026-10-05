@@ -144,13 +144,16 @@ def plot_runtime(
         stds.append(row['time_std'])
         
     x = np.arange(len(labels))
-    ax.bar(x, means, yerr=stds, color=colors, capsize=5, alpha=0.7)
+    # Clip to small positive value to avoid log(0) for zero-runtime edge cases
+    log_safe_means = [max(m, 1e-6) for m in means]
+    ax.bar(x, log_safe_means, color=colors, capsize=5, alpha=0.7)
     
     ax.set_xticks(x)
     ax.set_xticklabels(labels, rotation=45, ha='right')
-    ax.set_ylabel('Mean Runtime (s)')
+    ax.set_yscale('log')
+    ax.set_ylabel('Mean Runtime (s) — Log Scale')
     ax.set_title(f'Runtime Comparison for {scenario_id}')
-    ax.grid(axis='y', linestyle='--', alpha=0.7)
+    ax.grid(axis='y', linestyle='--', alpha=0.7, which='both')
     
     out_path = FilePath(output_dir) / 'runtime.png'
     fig.savefig(out_path, bbox_inches='tight', dpi=300)
